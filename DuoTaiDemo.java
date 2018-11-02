@@ -1,3 +1,6 @@
+/*
+	åŠ¨ç‰©ç±»
+*/
 class Animal
 {
 	public int age = 10;
@@ -5,7 +8,9 @@ class Animal
 		System.out.println("show Animal");
 	}
 }
-
+/*
+	çŒ«ç»§æ‰¿åŠ¨ç‰©ç±»
+*/
 class Cat extends Animal
 {
 	public int age = 20;
@@ -14,7 +19,7 @@ class Cat extends Animal
 	}
 
 	public void playGame(){
-		System.out.println("Ã¨ÍæÓÎÏ·");
+		System.out.println("çŒ«ç©æ¸¸æˆ");
 	}
 }
 
@@ -26,32 +31,32 @@ class Dog extends Animal
 	}
 
 	public void playGame(){
-		System.out.println("¹·ÍæÓÎÏ·");
+		System.out.println("ç‹—ç©æ¸¸æˆ");
 	}
 }
 
 /**
-	¶àÌ¬ÖĞµÄÀàĞÍ×ª»»ÎÊÌâ
+	å¤šæ€ä¸­çš„ç±»å‹è½¬æ¢é—®é¢˜
 */
 class DuoTaiDemo 
 {
 	public static void main(String[] args) 
 	{
-		Animal a = new Dog();//¸¸ÀàÒıÓÃÖ¸Ïò×ÓÀà¶ÔÏó
+		Animal a = new Dog();//çˆ¶ç±»å¼•ç”¨æŒ‡å‘å­ç±»å¯¹è±¡
 
-		a.show();//³ÉÔ±±äÁ¿£º±àÒë¿´×ó±ß£¬ÔËĞĞ¿´×ó±ß  ³ÉÔ±·½·¨£º±àÒë¿´×ó±ß£¬ÔËĞĞ¿´ÓÒ±ß
+		a.show();//æˆå‘˜å˜é‡ï¼šç¼–è¯‘çœ‹å·¦è¾¹ï¼Œè¿è¡Œçœ‹å·¦è¾¹  æˆå‘˜æ–¹æ³•ï¼šç¼–è¯‘çœ‹å·¦è¾¹ï¼Œè¿è¡Œçœ‹å³è¾¹
 
 		System.out.println(a.age);
 
-        //ÒªÏëµ÷ÓÃÁíÍâ×ÓÀàµÄ·½·¨£¬ÖØĞÂ¸ø¸¸ÀàÒıÓÃ¸³Öµ
+        	//è¦æƒ³è°ƒç”¨å¦å¤–å­ç±»çš„æ–¹æ³•ï¼Œé‡æ–°ç»™çˆ¶ç±»å¼•ç”¨èµ‹å€¼
 		a = new Cat();
 		a.show();
 
-		//ÒªÏëµ÷ÓÃ×ÓÀàÌØÓĞµÄ·½·¨£¬ĞèÒª½«¸¸ÒıÓÃÏòÏÂ×ªĞÍ
+		//è¦æƒ³è°ƒç”¨å­ç±»ç‰¹æœ‰çš„æ–¹æ³•ï¼Œéœ€è¦å°†çˆ¶å¼•ç”¨å‘ä¸‹è½¬å‹
 		//Cat c = (Cat) a ;
 		//c.playGame();
 
-		Dog d = (Dog) a ;//ÏòÏÂ×ªĞÍ£¬½«ÒıÓÃ×ª³É¹·¿´¿´ĞĞ²»ĞĞ£¿
+		Dog d = (Dog) a ;//å‘ä¸‹è½¬å‹ï¼Œå°†å¼•ç”¨è½¬æˆç‹—çœ‹çœ‹è¡Œä¸è¡Œï¼Ÿ
 		d.show();
 
 
